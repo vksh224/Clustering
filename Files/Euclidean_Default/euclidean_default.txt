@@ -1,0 +1,11 @@
+Initial Centroids 
+Initial Centroid 0   (22.0, 0.0, 0.0, 1.0)
+Initial Centroid 1   (79.0, 12.0, 12.0, 12.0)
+Initial Centroid 2   (25.0, 0.0, 1.0, 1.0)
+Size of Cluster 0 108
+Size of Cluster 1 87
+Size of Cluster 2 10
+4 centroid0	0.05 0.01 0.18 
+4 centroid1	11.77 11.69 10.95 
+4 centroid2	0.60 0.70 2.00 
+270.074074074

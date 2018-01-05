@@ -1,0 +1,142 @@
+set terminal postscript eps enhanced color 
+set style line 1 lc rgb "blue" lt 7 lw 2 ps 2
+set style line 2 lc rgb "black" lt 8 lw 2 ps 2
+set style line 3 lc rgb "green" lt 4 lw 2 ps 2
+set style line 4 lc rgb "red" lt 4 lw 2 ps 2
+set style line 5 lc rgb "blue" lt 8 lw 2 ps 2
+set style line 6 lc rgb "red" lt 8 lw 2 ps 2
+set xlabel 'Top 20 most Frequent Words'
+set ylabel 'Frequency' 
+set yrange[-20:160]
+plot 'Output2/jaccard_least_1.0.txt' u 2:xticlabels(1) w p ls 1 t'Jaccard Least Similar Article 1', 'Output2/jaccard_least_1.0.txt' u 3:xticlabels(1) w p  ls 1 t'Jaccard Least Similar Article 2', 'Output2/jaccard_most_0.0.txt' u 2:xticlabels(1) w p  ls 2 t'Jaccard Most Similar Article 1', 'Output2/jaccard_most_0.0.txt' u 3:xticlabels(1) w p ls 2 t'Jaccard Most Similar Article 2'
+set output 'Plots2/jaccardSimilarity.eps'
+replot
+
+
+set terminal postscript eps enhanced color 
+set xlabel 'Word 1'
+set ylabel 'Word 2' rotate by 45
+set zlabel 'Word 3' rotate by 90
+set ytics font "Times-Roman,30" 
+set xtics font "Times-Roman,30"
+set ztics font "Times-Roman, 30" 
+set xlabel font "Times-Roman,30"
+set ylabel font "Times-Roman,30" 
+set zlabel font "Times-Roman,30"
+set key font "Times-Roman, 30"
+
+set style line 1 lc rgb "blue" lt 1 lw 2 ps 2
+set style line 2 lc rgb "black" lt 7 lw 2 ps 3
+set style line 3 lc rgb "green" lt 4 lw 2 ps 2
+set style line 4 lc rgb "red" lt 4 lw 2 ps 2
+set style line 5 lc rgb "blue" lt 8 lw 2 ps 2
+set style line 6 lc rgb "red" lt 8 lw 2 ps 2
+splot  'cluster_0.txt' u 2:3:4 w p  ls 1 notitle, 'cluster_1.txt' u 2:3:4 w p ls 5 notitle, 'cluster_2.txt' u 2:3:4 w p ls 4 notitle, 'cluster_0.txt' every ::::0 u 2:3:4 w p ls 2 notitle, 'cluster_1.txt' every ::::0 u 2:3:4 w p ls 2 notitle, 'cluster_2.txt' every ::::0 u 2:3:4 w p ls 2 notitle
+
+set output 'Plots/euclid_default.eps'
+replot
+
+========= Euclid Default ============
+
+set terminal postscript eps enhanced color 
+set xlabel 'Word 1'
+set ylabel 'Word 2' rotate by 45
+set zlabel 'Word 3' rotate by 90
+set ytics font "Times-Roman,30" 
+set xtics font "Times-Roman,30"
+set ztics font "Times-Roman, 30" 
+set xlabel font "Times-Roman,30"
+set ylabel font "Times-Roman,30" 
+set zlabel font "Times-Roman,30"
+set key font "Times-Roman, 30"
+
+set style line 1 lc rgb "blue" lt 1 lw 2 ps 2
+set style line 2 lc rgb "black" lt 7 lw 2 ps 3
+set style line 3 lc rgb "green" lt 4 lw 2 ps 2
+set style line 4 lc rgb "red" lt 4 lw 2 ps 2
+set style line 5 lc rgb "blue" lt 8 lw 2 ps 2
+set style line 6 lc rgb "red" lt 8 lw 2 ps 2
+splot  'Euclidean_Default/euclidDefaultcluster_0.txt' u 2:3:4 w p  ls 1 notitle, 'Euclidean_Default/euclidDefaultcluster_1.txt' u 2:3:4 w p ls 5 notitle, 'Euclidean_Default/euclidDefaultcluster_2.txt' u 2:3:4 w p ls 4 notitle, 'Euclidean_Default/euclidDefaultcluster_0.txt' every ::::0 u 2:3:4 w p ls 2 notitle, 'Euclidean_Default/euclidDefaultcluster_1.txt' every ::::0 u 2:3:4 w p ls 2 notitle, 'Euclidean_Default/euclidDefaultcluster_2.txt' every ::::0 u 2:3:4 w p ls 2 notitle
+
+set output 'Plots/euclid_default.eps'
+replot
+
+
+======== Euclid Similarity ===========
+
+set terminal postscript eps enhanced color 
+set xlabel 'Word 1'
+set ylabel 'Word 2' rotate by 45
+set zlabel 'Word 3' rotate by 90
+set ytics font "Times-Roman,30" 
+set xtics font "Times-Roman,30"
+set ztics font "Times-Roman, 30" 
+set xlabel font "Times-Roman,30"
+set ylabel font "Times-Roman,30" 
+set zlabel font "Times-Roman,30"
+set key font "Times-Roman, 30"
+
+set style line 1 lc rgb "blue" lt 1 lw 2 ps 2
+set style line 2 lc rgb "black" lt 7 lw 2 ps 3
+set style line 3 lc rgb "green" lt 4 lw 2 ps 2
+set style line 4 lc rgb "red" lt 4 lw 2 ps 2
+set style line 5 lc rgb "blue" lt 8 lw 2 ps 2
+set style line 6 lc rgb "red" lt 8 lw 2 ps 2
+splot  'Euclidean_Similarity/euclidSimcluster_0.txt' u 2:3:4 w p  ls 1 notitle, 'Euclidean_Similarity/euclidSimcluster_1.txt' u 2:3:4 w p ls 5 notitle, 'Euclidean_Similarity/euclidSimcluster_2.txt' u 2:3:4 w p ls 4 notitle, 'Euclidean_Similarity/euclidSimcluster_0.txt' every ::::0 u 2:3:4 w p ls 2 notitle, 'Euclidean_Similarity/euclidSimcluster_1.txt' every ::::0 u 2:3:4 w p ls 2 notitle, 'Euclidean_Similarity/euclidSimcluster_2.txt' every ::::0 u 2:3:4 w p ls 2 notitle
+
+set output 'Plots/euclid_sim.eps'
+replot
+
+
+====== Cosine Similarity =========
+
+set terminal postscript eps enhanced color 
+set xlabel 'Word 1'
+set ylabel 'Word 2' rotate by 45
+set zlabel 'Word 3' rotate by 90
+set ytics font "Times-Roman,30" 
+set xtics font "Times-Roman,30"
+set ztics font "Times-Roman, 30" 
+set xlabel font "Times-Roman,30"
+set ylabel font "Times-Roman,30" 
+set zlabel font "Times-Roman,30"
+set key font "Times-Roman, 30"
+
+set style line 1 lc rgb "blue" lt 1 lw 2 ps 2
+set style line 2 lc rgb "black" lt 7 lw 2 ps 3
+set style line 3 lc rgb "green" lt 4 lw 2 ps 2
+set style line 4 lc rgb "red" lt 4 lw 2 ps 2
+set style line 5 lc rgb "blue" lt 8 lw 2 ps 2
+set style line 6 lc rgb "red" lt 8 lw 2 ps 2
+splot  'Cosine_Similarity/cosineSimcluster_0.txt' u 2:3:4 w p  ls 1 notitle, 'Cosine_Similarity/cosineSimcluster_1.txt' u 2:3:4 w p ls 5 notitle, 'Cosine_Similarity/cosineSimcluster_2.txt' u 2:3:4 w p ls 4 notitle, 'Cosine_Similarity/cosineSimcluster_0.txt' every ::::0 u 2:3:4 w p ls 2 notitle, 'Cosine_Similarity/cosineSimcluster_1.txt' every ::::0 u 2:3:4 w p ls 2 notitle, 'Cosine_Similarity/cosineSimcluster_2.txt' every ::::0 u 2:3:4 w p ls 2 notitle
+
+set output 'Plots/cosine_sim.eps'
+replot
+
+
+====== Jaccard Similarity ======
+
+
+set terminal postscript eps enhanced color 
+set xlabel 'Word 1'
+set ylabel 'Word 2' rotate by 45
+set zlabel 'Word 3' rotate by 90
+set ytics font "Times-Roman,30" 
+set xtics font "Times-Roman,30"
+set ztics font "Times-Roman, 30" 
+set xlabel font "Times-Roman,30"
+set ylabel font "Times-Roman,30" 
+set zlabel font "Times-Roman,30"
+set key font "Times-Roman, 30"
+
+set style line 1 lc rgb "blue" lt 1 lw 2 ps 2
+set style line 2 lc rgb "black" lt 7 lw 2 ps 3
+set style line 3 lc rgb "green" lt 4 lw 2 ps 2
+set style line 4 lc rgb "green" lt 4 lw 2 ps 2
+set style line 5 lc rgb "red" lt 8 lw 2 ps 2
+set style line 6 lc rgb "red" lt 8 lw 2 ps 2
+splot  'Jaccard_Similarity/jaccardSimcluster_0.txt' u 2:3:4 w p  ls 1 notitle, 'Jaccard_Similarity/jaccardSimcluster_1.txt' u 2:3:4 w p ls 5 notitle, 'Jaccard_Similarity/jaccardSimcluster_2.txt' u 2:3:4 w p ls 4 notitle, 'Jaccard_Similarity/jaccardSimcluster_0.txt' every ::::0 u 2:3:4 w p ls 2 notitle, 'Jaccard_Similarity/jaccardSimcluster_1.txt' every ::::0 u 2:3:4 w p ls 2 notitle, 'Jaccard_Similarity/jaccardSimcluster_2.txt' every ::::0 u 2:3:4 w p ls 2 notitle
+
+set output 'Plots/jaccard_sim.eps'
+replot
+

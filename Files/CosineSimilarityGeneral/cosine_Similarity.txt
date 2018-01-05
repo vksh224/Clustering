@@ -1,0 +1,16 @@
+Initial Centroids 
+Initial Centroid 0   (189.0, 0.0, 0.0, 1.0, 0.0, 0.0, 3.0, 0.0, 0.0, 4.0)
+Initial Centroid 1   (204.0, 12.0, 12.0, 11.0, 0.0, 3.0, 3.0, 0.0, 3.0, 3.0)
+Initial Centroid 2   (57.0, 13.0, 13.0, 12.0, 0.0, 3.0, 0.0, 1.0, 4.0, 2.0)
+Initial Centroid 3   (43.0, 12.0, 12.0, 12.0, 0.0, 3.0, 0.0, 0.0, 3.0, 2.0)
+Initial Centroid 4   (1.0, 12.0, 12.0, 11.0, 0.0, 3.0, 0.0, 0.0, 3.0, 2.0)
+Size of Cluster 0 104
+Size of Cluster 1 0
+Size of Cluster 2 22
+Size of Cluster 3 61
+Size of Cluster 4 18
+10 centroid0	9.89 9.85 9.32 0.00 3.79 0.61 0.15 2.55 1.67 
+10 centroid2	0.05 0.00 0.55 3.55 0.00 2.36 0.00 0.00 1.86 
+10 centroid3	0.02 0.02 0.07 7.46 0.00 2.70 3.13 0.00 0.77 
+10 centroid4	0.22 0.00 0.39 0.17 0.22 0.00 3.67 0.00 0.00 
+inf
